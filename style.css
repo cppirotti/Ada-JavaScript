@@ -1,0 +1,159 @@
+*   {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f0f2f5, #d9e2ec);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding-top: 50px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin-bottom: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .tarefa-texto {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .tarefa-texto.concluida {
+      text-decoration: line-through;
+      color: red;
+    }
+
+    .botoes {
+      display: flex;
+      gap: 10px;
+    }
+
+    .botoes button {
+      flex: 1;
+      background-color: #ddd;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .botoes button:hover {
+      background-color: #ccc;
+    }
+
+    .botoes .editar {
+      background-color: #ffca28;
+    }
+
+    .botoes .editar:hover {
+      background-color: #ffc107;
+    }
+
+    .botoes .status {
+      background-color: #03a9f4;
+      color: white;
+    }
+
+    .botoes .status:hover {
+      background-color: #0288d1;
+    }
+
+    .botoes .remover {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .botoes .remover:hover {
+      background-color: #d32f2f;
+    }
+
+    .filtros {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .filtros button {
+      padding: 6px 12px;
+      font-size: 14px;
+      background-color: #eee;
+      color: #333;
+    }
+
+    .filtros button.ativo {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    @media (max-width: 500px) {
+      .input-group {
+        flex-direction: column;
+      }
+
+      .botoes {
+        flex-direction: column;
+      }
+
+      .filtros {
+        flex-direction: column;
+      }
+    }
